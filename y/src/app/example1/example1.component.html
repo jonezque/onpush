@@ -1,0 +1,11 @@
+<app-string [data]="data"></app-string>
+<app-object [data]="dataObject"></app-object>
+<div>
+  object change
+  <input (ngModelChange)="updateObject($event)" [(ngModel)]="model1" />
+</div>
+
+<div>
+  string change
+  <input (ngModelChange)="updateString($event)"[(ngModel)]="model2" />
+</div>
